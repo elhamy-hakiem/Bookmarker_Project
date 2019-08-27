@@ -78,7 +78,7 @@ function Validate(siteName,siteUrl)
         return false;
     }
     
-    var expression = /^https:\/\/www\.[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/gi;
+    var expression = /^https:\/\/.[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/gi;
     var urlRegex = new RegExp(expression);
     if (!siteUrl.match(urlRegex)) {
       alert("URL Is No Valid");
